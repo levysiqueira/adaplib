@@ -1,0 +1,20 @@
+<HTML>
+<BODY>
+Classes relativas às funções adaptativas.<br>
+<p>Existe uma hierarquia específica para os parâmetros, sendo que todas as classes
+derivam da interface Parametro. A partir dessa classe existe duas divisões:
+<ul>
+<li>ParametroValor e ParametroReferencia: representam se o parâmetro é passado
+por valor ou por referência.</li>
+<li>ParametroEvento, ParametroConfiguracao e ParametroGerador: representam os
+tipos efetivos do parâmetro (evento, configuração e gerador)</li>
+</ul></p>
+<p>As classes "concretas" são a mistura dessas divisões. As derivadas de
+ParametroValor definem <i>String</i>s com o valor em si, representando o símbolo
+associado ao evento ou o nome da configuração. As classes derivadas de
+ParametroReferencia definem um inteiro, referenciado os parâmetros passados em
+uma função adaptativa específica.</p>
+<p>A única restrição dessa hierarquia é que o ParametroGerador é sempre por
+referência (já que ele é criado dentro da função adaptativa).</p>
+</BODY>
+</HTML>

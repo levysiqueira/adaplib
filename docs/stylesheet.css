@@ -1,0 +1,28 @@
+/* Javadoc style sheet */
+/* Alterado por Fábio Levy Siqueira*/
+
+/* Define colors, fonts and other style attributes here to override the defaults  */
+
+/* Page background color */
+body { background-color: #FFFFFF; font-family: "Century Gothic", "Tw Cen MT", Tahoma, Verdana; font-size: 10pt}
+a {color: #000000}
+
+/* Table colors */
+.TableHeadingColor     { background: #B4B4B4 } /* Dark mauve */
+.TableSubHeadingColor  { background: #E4E0E0 } /* Light mauve */
+.TableRowColor         { background: #FFFFFF; font-size: 10pt } /* White */
+
+/* Font used in left-hand frame lists */
+.FrameTitleFont   { font-size: normal; font-family: "Century Gothic", "Tw Cen MT", Tahoma, Verdana }
+.FrameHeadingFont { font-size: 10pt; font-family: "Century Gothic", "Tw Cen MT", Tahoma, Verdana }
+.FrameItemFont    { font-size: 10pt; font-family: "Century Gothic", "Tw Cen MT", Tahoma, Verdana }
+
+/* Navigation bar fonts and colors */
+.NavBarCell1    { background-color:#E4E0E0;}/* Light mauve */
+.NavBarCell1Rev { background-color:#B9B9B9;}/* Dark Blue */
+.NavBarFont1    { font-family: "Century Gothic", "Tw Cen MT", Tahoma, Verdana; color:#000000;}
+.NavBarFont1Rev { font-family: "Century Gothic", "Tw Cen MT", Tahoma, Verdana; color:#FFFFFF;}
+
+.NavBarCell2    { font-family: "Century Gothic", "Tw Cen MT", Tahoma, Verdana; background-color:#FFFFFF;}
+.NavBarCell3    { font-family: "Century Gothic", "Tw Cen MT", Tahoma, Verdana; background-color:#FFFFFF;}
+
