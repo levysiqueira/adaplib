@@ -1,53 +1,53 @@
-#Adaplib
+# Adaplib
 
-AdapLib é uma biblioteca que permite a execução de dispositivos adaptativos em Java. O objetivo é permitir o emprego do conceito de dispositivos adaptativos em aplicações (comerciais ou não), sem se preocupar com os detalhes de como implementá-lo: esses detalhes são tratados pela AdapLib. Dessa forma, ao mesmo tempo em que se pretende seguir o formalismo original de [dispositivos adaptativos](http://www.pcs.usp.br/~lta/), há também a preocupação com o desempenho e extensibilidade da biblioteca.
+AdapLib Ã© uma biblioteca que permite a execuÃ§Ã£o de dispositivos adaptativos em Java. O objetivo Ã© permitir o emprego do conceito de dispositivos adaptativos em aplicaÃ§Ãµes (comerciais ou nÃ£o), sem se preocupar com os detalhes de como implementÃ¡-lo: esses detalhes sÃ£o tratados pela AdapLib. Dessa forma, ao mesmo tempo em que se pretende seguir o formalismo original de [dispositivos adaptativos](http://www.pcs.usp.br/~lta/), hÃ¡ tambÃ©m a preocupaÃ§Ã£o com o desempenho e extensibilidade da biblioteca.
 
-A biblioteca foi criada seguindo os conceitos da orientação à objetos. Conforme a necessidade do desenvolvedor, algumas classes podem ser especializadas, permitindo, por exemplo a execução de um código Java ao passar por um determinada configuração, ou ao executar uma regra.
+A biblioteca foi criada seguindo os conceitos da orientaÃ§Ã£o Ã  objetos. Conforme a necessidade do desenvolvedor, algumas classes podem ser especializadas, permitindo, por exemplo a execuÃ§Ã£o de um cÃ³digo Java ao passar por um determinada configuraÃ§Ã£o, ou ao executar uma regra.
 
-##Licença
-Este Software é licenciado sob a [CC-GNU LGPL](http://creativecommons.org/licenses/LGPL/2.1/).
+## LicenÃ§a
+Este Software Ã© licenciado sob a [CC-GNU LGPL](http://creativecommons.org/licenses/LGPL/2.1/).
 
-#Versão 2.0 - 05/10/2008
-- Separação da camada subjacente da camada adaptativa.
+# VersÃ£o 2.0 - 05/10/2008
+- SeparaÃ§Ã£o da camada subjacente da camada adaptativa.
 	- Permite que uma camada adaptativa seja camada subjacente de uma outra camada adaptativa.
-- Definição de um tipo para cada parâmetro (não há mais o enumerador).
-- Ação adaptativa de remoção pode considerar qualquer combinação de estado inicial, final e símbolo (menos a que remove TODAS as transições).
-- Ações adaptativas executadas antes (pré) e depois (pós) da execução das ações adaptativas de uma função.
-- Log usando log4j (ainda é necessário mais logs).
+- DefiniÃ§Ã£o de um tipo para cada parÃ¢metro (nÃ£o hÃ¡ mais o enumerador).
+- AÃ§Ã£o adaptativa de remoÃ§Ã£o pode considerar qualquer combinaÃ§Ã£o de estado inicial, final e sÃ­mbolo (menos a que remove TODAS as transiÃ§Ãµes).
+- AÃ§Ãµes adaptativas executadas antes (prÃ©) e depois (pÃ³s) da execuÃ§Ã£o das aÃ§Ãµes adaptativas de uma funÃ§Ã£o.
+- Log usando log4j (ainda Ã© necessÃ¡rio mais logs).
 
-##Documentação
-- [Javadoc](docs/javadoc/index.html)
+## DocumentaÃ§Ã£o
+- [Javadoc](docs/javadoc/)
 
-###Diagramas de classes
+### Diagramas de classes
 - [Geral](docs/geral.png)
-- [Execução](docs/execucao.png)
-- [Função adaptativa](docs/funcaoadaptativa.png)
+- [ExecuÃ§Ã£o](docs/execucao.png)
+- [FunÃ§Ã£o adaptativa](docs/funcaoadaptativa.png)
 - [Parametros](docs/parametros.png)
-- [Autômato](docs/automato.png)
+- [AutÃ´mato](docs/automato.png)
 
-###Exemplo
-- [Exemplo de Automato](examples/br/adaplib/exemplo/ExemploAutomato.java].
-- [Exemplo de Automato Adaptativo](examples/br/adaplib/exemplo/ExemploAutomatoAdaptativo.java]
+### Exemplo
+- [Exemplo de Automato](examples/br/adaplib/exemplo/ExemploAutomato.java)
+- [Exemplo de Automato Adaptativo](examples/br/adaplib/exemplo/ExemploAutomatoAdaptativo.java)
 
-#Versão 1.0 - 07/02/2008
-- Representação e execução de autômatos finitos e autômatos finitos adaptativos determinísticos.
-- Funções adaptativas.
-- Ações adaptativas de remoção que removem a partir do estado origem e do estado destino e/ou símbolo.
-- Ações adaptativas de inserção, inserindo transições com funções adaptativas.
-- Uso das informações dos parâmetros da função adaptativa para executar as ações adaptativas.
+# VersÃ£o 1.0 - 07/02/2008
+- RepresentaÃ§Ã£o e execuÃ§Ã£o de autÃ´matos finitos e autÃ´matos finitos adaptativos determinÃ­sticos.
+- FunÃ§Ãµes adaptativas.
+- AÃ§Ãµes adaptativas de remoÃ§Ã£o que removem a partir do estado origem e do estado destino e/ou sÃ­mbolo.
+- AÃ§Ãµes adaptativas de inserÃ§Ã£o, inserindo transiÃ§Ãµes com funÃ§Ãµes adaptativas.
+- Uso das informaÃ§Ãµes dos parÃ¢metros da funÃ§Ã£o adaptativa para executar as aÃ§Ãµes adaptativas.
 
-#TODO
-##Aspectos teóricos
-- Permitir autômato não determinístico: estratégias: threads & técnicas de IA.
-- Permitir o uso de um autômato de pilha como dispositivo subjacente.
-- Permitir o uso de uma tabela de decisão como dispositivo subjacente.
-- Ações adaptativas de busca.
-- Uso de variáveis nas funções adaptativas.
-- Fazer com que não haja ordem na execução das ações em uma função (precisa ser não determinístico).
+# TODO
+## Aspectos teÃ³ricos
+- Permitir autÃ´mato nÃ£o determinÃ­stico: estratÃ©gias: threads & tÃ©cnicas de IA.
+- Permitir o uso de um autÃ´mato de pilha como dispositivo subjacente.
+- Permitir o uso de uma tabela de decisÃ£o como dispositivo subjacente.
+- AÃ§Ãµes adaptativas de busca.
+- Uso de variÃ¡veis nas funÃ§Ãµes adaptativas.
+- Fazer com que nÃ£o haja ordem na execuÃ§Ã£o das aÃ§Ãµes em uma funÃ§Ã£o (precisa ser nÃ£o determinÃ­stico).
 
-##Aspectos práticos
+## Aspectos prÃ¡ticos
 - Planejar melhor os logs
 - Usar o JUnit para realizar os testes de unidade.
-- Criar um interpretador que siga a representação textual de autômatos, permitindo que ele seja lido de um arquivo texto (idealmente usando um compilador que usa um autômato adaptativo!).
-- Interface gráfica para modelar autômato (para simulação, a recomendação é usar o adaptools).
+- Criar um interpretador que siga a representaÃ§Ã£o textual de autÃ´matos, permitindo que ele seja lido de um arquivo texto (idealmente usando um compilador que usa um autÃ´mato adaptativo!).
+- Interface grÃ¡fica para modelar autÃ´mato (para simulaÃ§Ã£o, a recomendaÃ§Ã£o Ã© usar o adaptools).
 - Fazer thread-safe
